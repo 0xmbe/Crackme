@@ -27,6 +27,6 @@ Simmilar version but a litttle different. A good way to refresh what you have le
 Now this challenge takes it to the new level. There are 2 binaires, client and server. First run the server and then the client. In this challenge you are not allowed to hack into server executable, but you can monitor the TCP connection handshake. Mission here is to write a replica "fake" server that will mimic the original server and essentially send the client a correct password, that you can find hardcoded inside the client.
 
 ### MyCrackme07
-Also here is the simmilar situation as above, but this time the password is encrypted and gets decrypted when needed. You are not allowed to reverse a server.
+Also here is the simmilar situation as above, but this time the password is encrypted and gets decrypted when needed. You are not allowed to reverse a server. If you take a closer look at how the input is processed you will see that there is a bug regarding password length.
 
 ### TODO
