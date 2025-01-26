@@ -1,6 +1,9 @@
 # Crackme
 My learning process of reverse engineering executable binaries.
 
+## Running
+executables are included in bin folder.
+
 # Guide
 This is the learning challenge for reverse engineering. I source code is included but don't look at it without trying hard to reverse it! You will not learn like that. Instead drill hard and you will find the solution. There always is, I have tested it. Run the executable to see the challenge. Even though the challenges names are crackme I advice you not to simply patch it but to get the actual login information or as in later challenges write a keygen. That way you will get the most out of it.
 
