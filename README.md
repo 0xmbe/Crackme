@@ -1,11 +1,24 @@
 # Crackme
 My learning process of reverse engineering executable binaries.
+```
+╔══════════════════════════════════════════════════════╗
+╫~~~~~~~~~~~~~< Crackme by Matija Bensa >~~~~~~~~~~~~~~╫
+╚══════════════════════════════════════════════════════╝
+                         Mission
+  >> Get the correct password.
+  >> Write a keygen
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
+Enter password:
+█
+```
 ## Running
 executables are included in bin folder.
 
 ## Build
-If you want to build your won binary with g++ for example do:
+If you want to build your own binary with g++ for example do:
 ```
 g++ -Wall -std=c++14 -c MyCrackmeXX.cpp -o MyCrackmeXX.o
 g++ -Wall -std=c++14 -o MyCrackmeXX MyCrackmeXX.o -lgdi32 -luser32
@@ -40,5 +53,8 @@ Also here is the simmilar situation as above, but this time the password is encr
 
 ### MyCrackme08
 Key here is unique, it is generated based on your system information. Then it get ciphered with RC4 algorithm. No info taken for key generation is hardcoded so you will have to understand what info it is os somehow get that. There should be only 1 correct key.
+
+### MyCrackme09
+This time function that checks password is encrypted, it gets decrypted on-the-fly to virtual memory. To decrypt it you will have to find the key.
 
 ### TODO
